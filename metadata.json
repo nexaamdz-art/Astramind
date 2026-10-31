@@ -1,0 +1,7 @@
+{
+  "name": "AstraMind — Science & Innovation Club",
+  "description": "Official web portal for AstraMind Science & Innovation Club at Teacher Education College, Bejaia. Think, learn and innovate.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
