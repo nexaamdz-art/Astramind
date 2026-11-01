@@ -5,7 +5,6 @@ import {
   DiscordIcon,
   InstagramIcon,
   LinkedinIcon,
-  LogoSvg,
   SkylineSvg,
   YoutubeIcon,
 } from './Icons';
@@ -41,7 +40,11 @@ export const Footer: React.FC<FooterProps> = ({
         }}
       >
         <span className="logo">
-          <LogoSvg sparkColor="#e5efff" />
+          <img
+            src="/assets/aistudio/file_00000000fc3881f4b4f0c3d532ba170e_2dec6d87.png"
+            alt="AstraMind Logo"
+            className="logo-img"
+          />
         </span>
         <span className="brand-name">
           <strong>AstraMind</strong>

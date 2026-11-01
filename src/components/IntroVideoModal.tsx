@@ -1,6 +1,5 @@
 import React from 'react';
 import { Language } from '../types';
-import { LogoSvg } from './Icons';
 
 interface IntroVideoModalProps {
   language: Language;
@@ -32,8 +31,12 @@ export const IntroVideoModal: React.FC<IntroVideoModalProps> = ({
         </button>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
-          <div style={{ width: '48px', height: '40px' }}>
-            <LogoSvg />
+          <div style={{ width: '48px', height: '44px', display: 'grid', placeItems: 'center' }}>
+            <img
+              src="/assets/aistudio/file_00000000fc3881f4b4f0c3d532ba170e_2dec6d87.png"
+              alt="AstraMind Logo"
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+            />
           </div>
           <div>
             <h3 style={{ margin: 0, fontSize: '20px', color: '#101d3d' }}>
