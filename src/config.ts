@@ -3,9 +3,7 @@ import { AstraMindConfig } from './types';
 export const defaultConfig: AstraMindConfig = {
   email: 'astramind.club@example.com',
   social: {
-    youtube: 'https://youtube.com/@your-channel',
-    instagram: 'https://instagram.com/your_username',
-    linkedin: 'https://linkedin.com/company/your-page',
+    instagram: 'https://www.instagram.com/nexa.am.dev',
     discord: 'https://discord.gg/your-invite'
   }
 };

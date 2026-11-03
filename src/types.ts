@@ -3,9 +3,9 @@ export type Language = 'en' | 'ar';
 export interface AstraMindConfig {
   email: string;
   social: {
-    youtube: string;
+    youtube?: string;
     instagram: string;
-    linkedin: string;
+    linkedin?: string;
     discord: string;
   };
 }

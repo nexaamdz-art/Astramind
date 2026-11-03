@@ -51,16 +51,6 @@ export const Header: React.FC<HeaderProps> = ({
         </span>
       </a>
 
-      <button
-        className="menu-toggle"
-        id="menuToggle"
-        aria-label={t.header.toggleNav}
-        aria-expanded={mobileMenuOpen}
-        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-      >
-        {mobileMenuOpen ? '×' : '☰'}
-      </button>
-
       <nav className={`nav ${mobileMenuOpen ? 'open' : ''}`} id="mainNav" aria-label="Main navigation">
         <a
           className={activeSection === 'home' ? 'active' : ''}
@@ -132,6 +122,19 @@ export const Header: React.FC<HeaderProps> = ({
         >
           {t.nav.join}
         </a>
+        <div className="mobile-nav-cta">
+          <a
+            className="btn btn-primary mobile-contact-btn"
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              handleNavClick('#contact');
+            }}
+          >
+            <span>{t.header.contact}</span>
+            <MailIcon />
+          </a>
+        </div>
       </nav>
 
       <div className="header-tools">
@@ -155,7 +158,7 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
 
         <a
-          className="contact-button"
+          className="contact-button desktop-contact-btn"
           href="#contact"
           onClick={(e) => {
             e.preventDefault();
@@ -165,6 +168,17 @@ export const Header: React.FC<HeaderProps> = ({
           <span>{t.header.contact}</span>
           <MailIcon />
         </a>
+
+        <button
+          className="menu-toggle"
+          id="menuToggle"
+          aria-label={t.header.toggleNav}
+          aria-expanded={mobileMenuOpen}
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          type="button"
+        >
+          {mobileMenuOpen ? '×' : '☰'}
+        </button>
       </div>
     </header>
   );

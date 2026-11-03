@@ -4,9 +4,7 @@ import { translations } from '../translations';
 import {
   DiscordIcon,
   InstagramIcon,
-  LinkedinIcon,
   SkylineSvg,
-  YoutubeIcon,
 } from './Icons';
 
 interface FooterProps {
@@ -54,28 +52,12 @@ export const Footer: React.FC<FooterProps> = ({
 
       <div className="socials" aria-label="Social media">
         <a
-          href={config.social.youtube}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="YouTube"
-        >
-          <YoutubeIcon />
-        </a>
-        <a
           href={config.social.instagram}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
           <InstagramIcon />
-        </a>
-        <a
-          href={config.social.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <LinkedinIcon />
         </a>
         <a
           href={config.social.discord}
